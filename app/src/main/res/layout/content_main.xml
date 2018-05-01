@@ -13,75 +13,90 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="#2E4053"
         android:text="Login"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintEnd_toEndOf="@+id/passWord"
+        app:layout_constraintTop_toBottomOf="@+id/passWord" />
 
     <EditText
         android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Username"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="212dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerLoginLabel" />
 
     <EditText
         android:id="@+id/passWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Password"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="266dp" />
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titleLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BagIt & TagIt"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="146dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="BagIt &amp; TagIt"
+        app:layout_constraintBottom_toBottomOf="@+id/customerLoginLabel"
+        app:layout_constraintStart_toStartOf="@+id/groceryImage"
         tools:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/customerLoginLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="8dp"
         android:text="Customer Login"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintStart_toStartOf="@+id/titleLabel"
+        app:layout_constraintTop_toBottomOf="@+id/groceryImage" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#2E4053"
         android:text="Sign Up"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/login"
+        app:layout_constraintStart_toStartOf="@+id/passWord" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/employeeLogin"
         android:layout_width="126dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="91dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:background="#2E4053"
         android:text="Employee Login"
         android:textColor="#FFFFFF"
-        tools:layout_editor_absoluteX="218dp"
-        tools:layout_editor_absoluteY="411dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/groceryImage"
         android:layout_width="161dp"
         android:layout_height="167dp"
-        app:srcCompat="@drawable/Grocery_Image"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_marginTop="63dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grocery_image" />
 
 </android.support.constraint.ConstraintLayout>
