@@ -92,6 +92,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:background="#2E4053"
+                android:onClick="viewAccInfoOnClick"
                 android:text="Account Info"
                 android:textColor="#FFFFFF" />
         </TableRow>

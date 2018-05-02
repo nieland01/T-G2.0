@@ -7,13 +7,18 @@
     android:background="#AED6F1">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TableLayout
                 android:id="@+id/tableLayout2"
@@ -224,7 +229,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:text="@string/lisence"
+                        android:text="@string/license"
                         android:textSize="24sp" />
 
                     <EditText
@@ -250,6 +255,12 @@
                         android:ems="10"
                         android:hint="@string/mm_dd_yyyy"
                         android:inputType="date" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="400px"
+                        android:hint="@string/d_o_b" />
                 </TableRow>
 
                 <TableRow android:layout_height="72dp">
@@ -271,6 +282,7 @@
                 </TableRow>
 
                 <TableRow>
+
                     <TableRow>
 
                     </TableRow>

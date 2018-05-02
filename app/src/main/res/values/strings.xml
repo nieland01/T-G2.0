@@ -22,7 +22,7 @@
     <string name="d_o_b">D.O.B</string>
     <string name="expiration_date">Expiration Date</string>
     <string name="mm_dd_yyyy">MM-DD-YYYY</string>
-    <string name="lisence">Lisence #:</string>
+    <string name="license">License #:</string>
     <string name="driver_lic_info">Driver Lic. Info</string>
     <string name="pol">pol. #</string>
     <string name="effective_date">Effective Date:</string>
