@@ -10,31 +10,30 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="254dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="256dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="13dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:text="Customer Registration"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/addressCheck"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout2"
         android:layout_width="wrap_content"
-        android:layout_height="275dp"
-        android:layout_marginBottom="44dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
         android:gravity="top"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintBottom_toTopOf="@+id/finish"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <TableRow>
 
@@ -42,14 +41,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-                android:text="Street Address"
+                android:text="Card Number"
                 android:textSize="24sp" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="300px"
-                android:hint="Street" />
+                android:hint="Number" />
         </TableRow>
 
         <TableRow>
@@ -58,14 +57,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-                android:text="City"
+                android:text="Expr. Date"
                 android:textSize="24sp" />
 
             <EditText
                 android:layout_width="176dp"
                 android:layout_height="wrap_content"
                 android:width="300px"
-                android:hint="City" />
+                android:hint="MM/YYYY" />
         </TableRow>
 
         <TableRow>
@@ -74,14 +73,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-                android:text="State"
+                android:text="Name on Card"
                 android:textSize="24sp" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="300px"
-                android:hint="XX" />
+                android:hint="Name" />
         </TableRow>
 
         <TableRow>
@@ -90,26 +89,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-                android:text="Zip"
+                android:text="Security Code"
                 android:textSize="24sp" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="300px"
-                android:hint="XXXXX" />
+                android:hint="XXX" />
         </TableRow>
     </TableLayout>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginBottom="15dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="9dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="23dp"
-        android:text="Mailing Address"
+        android:text="Billing Information"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,45 +117,31 @@
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginRight="74dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
         android:background="#2E4053"
-        android:onClick="nextOnClick"
-        android:text="NEXT"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginStart="48dp"
-        android:background="#2E4053"
-        android:onClick="backOnClick"
+        android:onClick="backOnClickBill"
         android:text="back"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/finish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
 
-    <CheckBox
-        android:id="@+id/addressCheck"
+    <Button
+        android:id="@+id/finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="179dp"
-        android:text="Mailing Same As Billing?"
-        android:textSize="18sp"
+        android:layout_marginBottom="86dp"
+        android:background="#2E4053"
+        android:onClick="finishOnClick"
+        android:text="Finish"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textView" /><![CDATA[
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
 
-    //schemas.andr"#2E4053"
-        android:background=
-        rsion="1.0" encoding="utf-8"?>
-
-
-]]>
 </android.support.constraint.ConstraintLayout>

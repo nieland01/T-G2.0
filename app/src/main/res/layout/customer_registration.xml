@@ -10,28 +10,29 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="254dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="256dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Customer Registration"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintBottom_toTopOf="@+id/addressCheck"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="275dp"
+        android:layout_width="334dp"
+        android:layout_height="299dp"
         android:layout_marginBottom="44dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
         android:gravity="top"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
@@ -47,11 +48,11 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="200px"
-                android:hint="First Name" />
+                android:width="400px"
+                android:hint="First" />
         </TableRow>
 
-        <TableRow>
+        <TableRow android:layout_width="336dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -61,10 +62,10 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="216dp"
                 android:layout_height="wrap_content"
-                android:width="200px"
-                android:hint="Last Name" />
+                android:width="400px"
+                android:hint="Last" />
         </TableRow>
 
         <TableRow>
@@ -79,8 +80,8 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="200px"
-                android:hint="Email" />
+                android:width="400px"
+                android:hint="abc@123@email.com" />
         </TableRow>
 
         <TableRow>
@@ -95,8 +96,8 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="200px"
-                android:hint="Phone" />
+                android:width="400px"
+                android:hint="XXX-XXX-XXXX" />
         </TableRow>
 
         <TableRow>
@@ -111,13 +112,11 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="200px"
+                android:width="400px"
                 android:hint="Username" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TableRow>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -127,40 +126,55 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:layout_width="183dp"
-                android:layout_height="wrap_content"
-                android:width="300px"
-                android:hint="Password" />
+                android:id="@+id/passWord"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:width="400px"
+                android:hint="Pass" />
         </TableRow>
     </TableLayout>
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="83dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginRight="18dp"
-        android:background="#2E4053"
-        android:text="Next"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:text="Basic Information"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="7dp"
-        android:layout_marginStart="7dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
         android:background="#2E4053"
-        android:text="Back"
+        android:onClick="nextOnClick"
+        android:text="NEXT"
         android:textColor="#FFFFFF"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="48dp"
+        android:background="#2E4053"
+        android:onClick="backOnClick"
+        android:text="back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
