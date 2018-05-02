@@ -16,4 +16,16 @@
     <string name="next">NEXT</string>
     <string name="back">back</string>
     <string name="xxx_xxx_xxxx">XXX-XXX-XXXX</string>
+    <string name="vehicle_information">Vehicle Information</string>
+    <string name="lic">lic. #</string>
+    <string name="date_of_birth">Date of birth:</string>
+    <string name="d_o_b">D.O.B</string>
+    <string name="expiration_date">Expiration Date</string>
+    <string name="mm_dd_yyyy">MM-DD-YYYY</string>
+    <string name="lisence">Lisence #:</string>
+    <string name="driver_lic_info">Driver Lic. Info</string>
+    <string name="pol">pol. #</string>
+    <string name="effective_date">Effective Date:</string>
+    <string name="lic_plate">Lic. plate #</string>
+    <string name="make">Make:</string>
 </resources>
