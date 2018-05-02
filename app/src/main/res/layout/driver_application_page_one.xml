@@ -170,10 +170,12 @@
                         android:textSize="24sp" />
 
                     <EditText
+                        android:id="@+id/editText3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:width="400px"
-                        android:hint="@string/mm_dd_yyyy" />
+                        android:ems="10"
+                        android:hint="@string/mm_dd_yyyy"
+                        android:inputType="date" />
                 </TableRow>
 
                 <TableRow>
@@ -186,10 +188,12 @@
                         android:textSize="24sp" />
 
                     <EditText
+                        android:id="@+id/editText4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:width="400px"
-                        android:hint="@string/mm_dd_yyyy" />
+                        android:ems="10"
+                        android:hint="@string/mm_dd_yyyy"
+                        android:inputType="date" />
                 </TableRow>
 
                 <TableRow>
@@ -240,10 +244,12 @@
                         android:textSize="24sp" />
 
                     <EditText
+                        android:id="@+id/editText6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:width="400px"
-                        android:hint="@string/d_o_b" />
+                        android:ems="10"
+                        android:hint="@string/mm_dd_yyyy"
+                        android:inputType="date" />
                 </TableRow>
 
                 <TableRow android:layout_height="72dp">
@@ -256,10 +262,12 @@
                         android:textSize="24sp" />
 
                     <EditText
+                        android:id="@+id/editText5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:width="400px"
-                        android:hint="@string/mm_dd_yyyy" />
+                        android:ems="10"
+                        android:hint="@string/mm_dd_yyyy"
+                        android:inputType="date" />
                 </TableRow>
 
                 <TableRow>

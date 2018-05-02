@@ -78,10 +78,12 @@
                 android:textSize="24sp" />
 
             <EditText
+                android:id="@+id/editText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="400px"
-                android:hint="abc@123@email.com" />
+                android:ems="10"
+                android:hint="abc@123@email.com"
+                android:inputType="textEmailAddress" />
         </TableRow>
 
         <TableRow>
@@ -94,10 +96,12 @@
                 android:textSize="24sp" />
 
             <EditText
+                android:id="@+id/editText2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:width="400px"
-                android:hint="XXX-XXX-XXXX" />
+                android:ems="10"
+                android:hint="XXX-XXX-XXXX"
+                android:inputType="phone" />
         </TableRow>
 
         <TableRow>
