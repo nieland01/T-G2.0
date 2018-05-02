@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">TagIt-BagIt</string>
     <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="employee_application">Employee Application</string>
+    <string name="abc_123_email_com">abc@123@email.com</string>
+    <string name="first_name">First Name</string>
+    <string name="phone">Phone</string>
+    <string name="first">First</string>
+    <string name="last">Last</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last Name</string>
+    <string name="pass">Pass</string>
+    <string name="basic_information">Basic Information</string>
+    <string name="next">NEXT</string>
+    <string name="back">back</string>
+    <string name="xxx_xxx_xxxx">XXX-XXX-XXXX</string>
 </resources>
