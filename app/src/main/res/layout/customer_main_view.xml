@@ -1,0 +1,112 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#AED6F1"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="164dp"
+        android:layout_height="402dp"
+        android:layout_margin="8dp"
+        android:gravity="top"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="145dp"
+                android:layout_height="33dp"
+                android:text="TagIt &amp; BagIt"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="25dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="150dp"
+                android:layout_height="33dp"
+                android:text="   Welcome!"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="25dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="#2E4053"
+                android:text="View"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#2E4053"
+                android:text="Search"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#2E4053"
+                android:text="Cart"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/accountinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="#2E4053"
+                android:text="Account Info"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#2E4053"
+                android:text="Logout"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
